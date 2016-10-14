@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="" />
+<title>Devotion By SG</title>
+    
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+    
+<!-- js -->
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 80,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+
+
+
+<body>
+
+<div id="wrapper">
+<header>
+    <div class="container clearfix">
+        <a href="index.html"><img id="logo" src="logo.png"></img></a>
+        <nav>
+            <a href="">Conócenos</a>
+            <a href="">Episodios</a>
+            <a href="">Media Kit</a>
+        </nav>
+    </div>
+</header><!-- /header -->
+
+<div id="main">
+     <div id="content">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h1>Acerca de Devotion</h1>
+                    <p>Devotion es un webshow que se transmitirá cada 15 días en el canal de YouTube de Software Gurú, donde se abordan temas enfocados a desarrolladores, como:</p>
+                    <ul>
+                        <li>Programación</li>
+                        <li>UX Design</li>
+                        <li>Making, IoT, hackeable gadgets</li>
+                        <li>Eventos y comunidad</li>
+                        <li>Noticias, trend.</li>
+                    </ul>
+                    <p>Los contenidos del programa son generados por el expertise de SG, se nutren de las aportaciones de colaboradores y de la opinión de nuestra audiencia. Así es como Devotion es un formato nuevo, compatible con la cultura digital.</p>
+                    <p>Devotion es parte de la evolución de contenidos en <b>Software Gurú.</b></p>
+                </div>
+            </div>
+        </section>
+        <section class="color">
+            <div class="container">
+                <div class="two-columns">
+                <img style="margin:1%;" width="100%" height="auto" src="maru.png"/>
+                <h1>Maru Lango</h1>
+                <h2>Full Stack Designer.</h2></br>
+                <p>Aunque Maru es diseñadora de formación, más de 10 años haciendo frontend la convierten en Ingeniera de vocación. También ayuda a organizar eventos de comunidades tecnológicas, tales como Women Who Code.
+                </p>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h1>Verónica López</h1>
+                <h2>Experta en desarrollo</h2></br>
+                <img style="float:right; margin:80px;" width="20%" height="auto" src="maru.png"/>
+                <p>Verónica es profesora en varios espacios del ámbito de desarrollo. Ha sido gran parte del movimiento de chicas en tecnología y además trae a cámara su conocimiento en ciencia e ingeniería de la computación. Su expertise incluye áreas como Python, Go, Linux, iOS y Android lo cual la hacen excelente para comunicar un sinfín de información relacionada al ámbito de desarrollo de software.
+</p>
+            </div>
+        </section>
+        <section class="color">
+            <div class="container">
+                <h1>Ophelia Pastrana</h1>
+                <h2>Experta en contenidos digitales</h2></br>
+                <img style="float:right; margin:80px;" width="20%" height="auto" src="maru.png"/>
+                <p>Ophelia es, según business insider, la mujer #69 a nivel mundial con más influencia en twitter en el tema de tecnología. Es TEDx speaker, ha sido imagen de Campus Party y Aldea Digital, por 4 años fue producer de Nerdcore Podcast: el show de tecnología con más audiencia para el ámbito de tecnología en México según iTunes.</p>
+                <p>Ophelia es también speaker en eventos en el ámbito de redes sociales con presentaciones como mkensocialmedia que dio de la mano de Randi Zuckerberg frente a 3,000 personas. Ha hablado en W Radio, Pechakucha, Women2.0, entre otros eventos. </p>
+            </div>
+        </section>
+    </div>
+</div><!-- #main -->
+</div><!-- /#wrapper -->
+</body>
+<footer>
+    Powered by: SG
+</footer>
+</html>
